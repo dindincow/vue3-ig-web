@@ -5,6 +5,7 @@ import pcRoutes from './modules/pc-routes';
 
 const router = new createRouter({
   history: createWebHistory(),
+  // true: MB端路由表 false: PC 端路由表
   routes: isMobileTerminal.value ? mobileRoutes : pcRoutes
 })
 
